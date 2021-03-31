@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,11 @@
 
 body {
     color: darkblue;
+}
+
+li {
+    list-style-type: '\1F431';
+    
 }
 
 /* .underRubrik{

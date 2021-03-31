@@ -1,8 +1,31 @@
-function productionTab(event, idOfElement){
+$( "li" ).on( "mouseover", function() {
+    let symbolBullet = "-";
+    
+  });
+  
+  function productionTab(event, idOfElement){
     
     console.log(event, idOfElement)
 
-    $('#produktioner-underRubrik').slideToggle(500);
+    $('#produktioner-underRubrik').slideToggle(500, function(e){
+
+        const element = document.querySelector('li')
+        const style = getComputedStyle(element)
+        var color = style.listStyleType;
+        console.log(color)
+        if(color === '→'){
+
+            $( element ).css( "list-style-type", "square");
+        }else $( element ).css( "list-style-type", "→");
+
+
+        // const type = style.list-style-type
+        // console.log(type + "test")
+
+
+            $(element).css("list-style-type","o")
+       
+    });
 
     // var x = document.getElementById("produktioner-underRubrik");
     // if (x.style.display === "none") {
