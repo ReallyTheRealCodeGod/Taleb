@@ -1,30 +1,29 @@
-$( "li" ).on( "mouseover", function() {
-    let symbolBullet = "-";
+
+
+$(function() {
+    $('.tabhover').hover(function(){
+        $(this).css('color', 'black');
+    },
+    function(){
+        $(this).css('color', 'rgb(102, 99, 67)');
+    });
+});
     
-  });
-  
-  function productionTab(event, idOfElement){
+function productionTab(event, idOfElement){
     
     console.log(event, idOfElement)
 
     $('#produktioner-underRubrik').slideToggle(500, function(e){
-
-        const element = document.querySelector('li')
-        const style = getComputedStyle(element)
-        var color = style.listStyleType;
-        console.log(color)
-        if(color === '→'){
-
-            $( element ).css( "list-style-type", "square");
-        }else $( element ).css( "list-style-type", "→");
-
+        // const element = document.querySelector('.tabhover')
+        // const style = getComputedStyle(element)
+        // var color = style.listStyleType;
+        // console.log(color)
+        // if(color === 'disc'){
+        //     $( element ).css( "list-style-type", "square");
+        // }else $( element ).css( "list-style-type", "disc");
 
         // const type = style.list-style-type
         // console.log(type + "test")
-
-
-            $(element).css("list-style-type","o")
-       
     });
 
     // var x = document.getElementById("produktioner-underRubrik");
@@ -33,16 +32,27 @@ $( "li" ).on( "mouseover", function() {
     // } else {
     //  x.style.display = "none";
     // }
-
 }
 
-function kontaktTab(event, idOfElement){
+function kontaktTab(event, idOfElement) {
     
     console.log(event, idOfElement)
 
     var x = document.getElementById("kontakt-underRubrik");
 
     $('#kontakt-underRubrik').slideToggle(500);
+        // const element = document.querySelector('tabhover')
+        // const style = getComputedStyle(element)
+        // var color = style.listStyleType;
+        // console.log(color)
+        // if(color === 'disc'){
+
+        //     $( element ).css( "list-style-type", "square");
+        // }else $( element ).css( "list-style-type", "disc");
+    
+        // const type = style.list-style-type
+        // console.log(type + "test")
+
 //     if (x.style.display === "none") {
 //     //  x.style.display = "block";
 //      $('#kontakt-underRubrik').fadeIn('slow');
