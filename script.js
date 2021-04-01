@@ -1,4 +1,5 @@
 
+ $( ".underRubrik:not(.still)" ).slideToggle( "slow")
 
 $(function() {
     $('.tabhover').hover(function(){
@@ -12,7 +13,6 @@ $(function() {
 function productionTab(event, idOfElement){
     
     console.log(event, idOfElement)
-
     $('#produktioner-underRubrik').slideToggle(500, function(e){
         // const element = document.querySelector('.tabhover')
         // const style = getComputedStyle(element)
@@ -38,9 +38,18 @@ function kontaktTab(event, idOfElement) {
     
     console.log(event, idOfElement)
 
-    var x = document.getElementById("kontakt-underRubrik");
+    var x = document.getElementById("");
 
-    $('#kontakt-underRubrik').slideToggle(500);
+    $('#kontakt-underRubrik').slideToggle(500, function(e){
+
+        console.log(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display)
+        if((getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block'))
+        {
+            $( "#produktioner-underRubrik:not(#kontakt-underRubrik)").slideToggle( "slow")
+
+        }
+
+
         // const element = document.querySelector('tabhover')
         // const style = getComputedStyle(element)
         // var color = style.listStyleType;
@@ -61,5 +70,5 @@ function kontaktTab(event, idOfElement) {
 //      $('#kontakt-underRubrik').is(":visible") ? 
 //      $('#kontakt-underRubrik').fadeOut('slow');
 //     }'
-
-}
+});
+    }
