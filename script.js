@@ -15,7 +15,7 @@ $(function() {
 //
 function productionTab(event, idOfElement){
 
-   // clickSubjectUnderWork("grow")
+   clickSubjectUnderWork("grow")
     $('#produktioner-underRubrik').slideToggle(500, function(e) {
 
         console.log(getComputedStyle(document.querySelector('#kontakt-underRubrik')).display)
@@ -38,18 +38,17 @@ function productionTab(event, idOfElement){
 function kontaktTab(event, idOfElement) {
  
     var x = document.getElementById("");   
-  //  clickSubjectUnderWork("grow")
+    clickSubjectUnderWork("grow")
     
     $('#kontakt-underRubrik').slideToggle(500, function(e){
         
         console.log(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display)
+
         if(getComputedStyle(document.querySelector('#kontakt-underRubrik')).display === 'block'  
         && getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block')
         {
             $( "#produktioner-underRubrik:not(#kontakt-underRubrik)").slideToggle( 500)
-            
         }
-        
         
         // const element = document.querySelector('tabhover')
         // const style = getComputedStyle(element)
@@ -74,21 +73,35 @@ function kontaktTab(event, idOfElement) {
         });
 }
 
+var flagAlreadyShrunk = false;
+var flagUnderrubrikWorkPressed = false;
+
 function clickSubjectUnderWork(directionOfGrowth) {
 
     if(directionOfGrowth === "shrink") {
         $("#produktioner").css("font-size","150%")
 
-        if(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block'){
-
+        if(!flagAlreadyShrunk){
+            $('#overskrift-navn').slideToggle(500)
+            $('#contact-text').slideToggle(500)
         }
-        $('#overskrift-navn').slideToggle(500)
+        flagAlreadyShrunk = true;
+        flagUnderrubrikWorkPressed = true;
     }
 
-
-    if(directionOfGrowth === "grow" && getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block') {
+    if(directionOfGrowth === "grow") {
+        
         $("#produktioner").css("font-size","40px ")
         $("#produktioner").css("font-weight", "bolder")
-        $('#overskrift-navn').slideToggle(500)
+        if(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block' && getComputedStyle(document.querySelector('#kontakt-underRubrik')).display === 'block') {
+            $('#overskrift-navn').slideToggle(500)
+            $('#contact-text').slideToggle(500)
+        }
+        if(flagAlreadyShrunk) {
+            $('#overskrift-navn').slideToggle(500)
+            $('#contact-text').slideToggle(500)
+        }
+
+        flagAlreadyShrunk = false;
     }
 }
