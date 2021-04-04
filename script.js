@@ -104,16 +104,29 @@ function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
     }
 
     if(directionOfGrowth === "grow") {
-        
+
+        if(getComputedStyle(document.querySelector('#underEditorial')).display === 'block'){
+            $('#underEditorial').slideToggle(500)
+        }
+        if(getComputedStyle(document.querySelector('#underArtical')).display === 'block'){
+            $('#underArtical').slideToggle(500)
+        }
+        if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
+            $('#underPhotos').slideToggle(500)
+        }
+
         $("#produktioner").css("font-size","2em ")
         $("#produktioner").css("font-weight", "bolder")
         if(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block' && getComputedStyle(document.querySelector('#kontakt-underRubrik')).display === 'block') {
             $('#overskrift-navn').slideToggle(500)
             $('#contact-text').slideToggle(500)
+
         }
         if(flagAlreadyShrunk) {
+
             $('#overskrift-navn').slideToggle(500)
             $('#contact-text').slideToggle(500)
+            
         }
 
         flagAlreadyShrunk = false;
