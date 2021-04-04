@@ -27,10 +27,9 @@ div {
          transition: font-size 1s;
 }
 
-.underRubrik, #underEditorial {
+.underRubrik {
     display: none; 
 }
-
 
 /* .underRubrik{
     display: none;

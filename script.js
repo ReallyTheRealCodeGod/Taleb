@@ -73,13 +73,27 @@ function kontaktTab(event, idOfElement) {
 var flagAlreadyShrunk = false;
 var flagUnderrubrikWorkPressed = false;
 
-function clickSubjectUnderWork(directionOfGrowth) {
+function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
 
     if(directionOfGrowth === "shrink") {
         $("#produktioner").css("font-size","120%")
 
-        $('#underEditorial').slideToggle(500)
 
+        if(getComputedStyle(document.querySelector('#'+expandSubject)).display === 'block'){
+            $('#'+expandSubject).slideToggle(500)
+            return
+        }
+            if(getComputedStyle(document.querySelector('#underEditorial')).display === 'block'){
+                $('#underEditorial').slideToggle(500)
+            }
+            if(getComputedStyle(document.querySelector('#underArtical')).display === 'block'){
+                $('#underArtical').slideToggle(500)
+            }
+            if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
+                $('#underPhotos').slideToggle(500)
+            }
+        
+        $('#'+expandSubject).slideToggle(500)
 
         if(!flagAlreadyShrunk){
             $('#overskrift-navn').slideToggle(500)
