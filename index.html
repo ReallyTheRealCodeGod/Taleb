@@ -24,14 +24,31 @@
                         <h1 style="opacity: 0%;">hehe</h1>
                         <h1 style="opacity: 0%;">hehe</h1>
                     </div> -->
-                    <div id="overskrift-navn" class="pt-5">
-                        <h1 class="fw-light text-center">Taleb Fartous</h1>
+                    <div id="overskrift-navn"  class="pt-5 fw-light text-center allText">
+                       Taleb Fartous
                     </div>
                     <div class="row" id="underOverskrift-produktioner">
-                        <h1 id="produktioner" class="text-center col fw-light tabhover" onclick="productionTab('click event occurred', this.id)">Work</h1>
+                        <div id="produktioner" style="border-top: 4mm ridge rgba(220, 161, 50, 0.1);" class="text-center col fw-light tabhover allText" onclick="productionTab('click event occurred', this.id)">
+                            Work
+                        </div>
                         <div class="underRubrik text-center" id="produktioner-underRubrik">
                             <div>
-                                <h3 class="col fw-light tabhover" onclick="clickSubjectUnderWork('shrink')">Editorial</h3>
+                                <div class="">
+                                    <h3 class="col fw-light tabhover" onclick="clickSubjectUnderWork('shrink')">Editorial</h3>
+                                    <div id="underEditorial" class=" initiallyHidden">
+                                            <div class="col-sm fw-light tabhover">
+                                                Vandfasten VICE, 2018 2min
+                                            </div>
+                                            <div class="col-sm fw-light">
+                                                |
+                                            </div>
+                                            <div class="col-sm fw-light tabhover">
+                                                Slowbeer på 90'eren Munchies, 2019 4min
+                                            </div> 
+                                    </div>
+                                </div>
+                                
+
                                 <h3 class="col fw-light tabhover">Artical</h3>
                                 <h3 class="col fw-light tabhover">C.R.E.A.M</h3>
                                 <!-- <iframe src="https://player.vimeo.com/video/474031715" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
@@ -40,13 +57,20 @@
                         </div>
                     </div>
                     <div id="underOverskrift-kontakt" class="row pb-5">
-                        <h1 id="contact-text" class="col fw-light tabhover text-center" onclick="kontaktTab('click event occurred', this.id)">Contact</h1>
+                        <div id="contact-text" class="col fw-light tabhover text-center allText" onclick="kontaktTab('click event occurred', this.id)">
+                            Contact
+                        </div>
                         <div class="underRubrik text-center" id="kontakt-underRubrik">
-                            <div class="col">
-                                <h3 class="col fw-light">tlf. 31829321</h3>
-                                <h3 class="col fw-light">email: taleb@fartous.dk</h3>
-                                <h3 class="col fw-light">adresse: hyldemosevænget 1234</h3>
-                            </div>
+                            
+                                <div class="col-sm fw-light">
+                                    tlf. 31829321
+                                </div>
+                                <div class="col-sm fw-light">
+                                    <a href = "mailto:taleb@fartous?subject=freelance job&amp;body=Hej Taleb Fartous, Jeg har et job til dig.">
+                                        Send email
+                                        </a>
+                                </div>
+
                         </div>
                     </div>
                 </div>

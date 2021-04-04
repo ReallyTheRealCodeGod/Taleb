@@ -7,6 +7,7 @@
 
 body {
     color:rgb(102, 99, 67);
+   
 }
 html, body {
     height: 100%;
@@ -17,12 +18,17 @@ div {
     background-color:rgb(226, 212, 148);
 }
 
-h1, h2, h3 {
+.allText {
+    font-size: 2em;
     opacity: 70%;
     -webkit-transition: font-size 1s;
     -moz-transition: font-size 1s;
       -o-transition: font-size 1s;
          transition: font-size 1s;
+}
+
+.underRubrik, #underEditorial {
+    display: none; 
 }
 
 

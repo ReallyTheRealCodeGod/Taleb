@@ -1,7 +1,4 @@
 
-//folder alle faner/tabs sammen når man kommer ind på siden. Så man starter med at få et overblik
-$( ".underRubrik:not(.still)" ).slideToggle( "slow")
-
 //med class definatioenen "tabhover", gør at tabs skifter farve, så man har en ide om at de er "clickable"
 $(function() {
     $('.tabhover').hover(function(){
@@ -79,7 +76,10 @@ var flagUnderrubrikWorkPressed = false;
 function clickSubjectUnderWork(directionOfGrowth) {
 
     if(directionOfGrowth === "shrink") {
-        $("#produktioner").css("font-size","150%")
+        $("#produktioner").css("font-size","120%")
+
+        $('#underEditorial').slideToggle(500)
+
 
         if(!flagAlreadyShrunk){
             $('#overskrift-navn').slideToggle(500)
@@ -91,7 +91,7 @@ function clickSubjectUnderWork(directionOfGrowth) {
 
     if(directionOfGrowth === "grow") {
         
-        $("#produktioner").css("font-size","40px ")
+        $("#produktioner").css("font-size","2em ")
         $("#produktioner").css("font-weight", "bolder")
         if(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block' && getComputedStyle(document.querySelector('#kontakt-underRubrik')).display === 'block') {
             $('#overskrift-navn').slideToggle(500)
