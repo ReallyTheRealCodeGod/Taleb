@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     color:rgb(102, 99, 67);
-   
 }
+
 html, body {
     height: 100%;
     background-color: rgb(226, 212, 148);
@@ -29,6 +28,16 @@ div {
 
 .underRubrik {
     display: none; 
+}
+
+.headerPopup{
+    width:75%;
+    margin:0 auto;
+}
+  
+.headerPopup iframe{
+    width:100%;
+    margin:0 auto;
 }
 
 /* .underRubrik{

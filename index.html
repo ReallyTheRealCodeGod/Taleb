@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./magnific-popup.min.css">
         <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -28,7 +29,7 @@
                        Taleb Fartous
                     </div>
                     <div class="row" id="underOverskrift-produktioner">
-                        <div id="produktioner" style="border-top: 1px solid rgb(102, 99, 67, 0.2);" class="text-center col fw-light tabhover allText" onclick="productionTab('click event occurred', this.id)">
+                        <div id="produktioner" class="text-center col fw-light tabhover allText" onclick="productionTab('click event occurred', this.id)">
                             Work
                         </div>
                         <div class="underRubrik text-center" id="produktioner-underRubrik">
@@ -37,13 +38,19 @@
                                     <h3 class="col fw-light tabhover" onclick="clickSubjectUnderWork('shrink' , 'underEditorial')">Editorial</h3>
                                     <div id="underEditorial" class="underRubrik">
                                             <div class="col-sm fw-light tabhover">
-                                                Vandfasten VICE, 2018 2min
+                                                <a href="#headerPopup" id="headerVideoLink1" target="_blank" class="alltext">See Why Solodev WXP</a>
+                                                <div class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div>
                                             <div class="col-sm fw-light">
                                                 |
                                             </div>
                                             <div class="col-sm fw-light tabhover">
-                                                Slowbeer på 90'eren Munchies, 2019 4min
+                                                <a href="#headerPopup" id="headerVideoLink2" target="_blank" class="alltext">See Why Solodev WXP</a>
+                                                <div class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div> 
                                     </div>
                                 </div>
@@ -51,13 +58,19 @@
                                     <h3 class="col fw-light tabhover" onclick="clickSubjectUnderWork('shrink' , 'underArtical')">Artical</h3>
                                     <div id="underArtical" class="underRubrik">
                                             <div class="col-sm fw-light tabhover">
-                                                Vandfasten VICE, 2018 2min
+                                                <a href="#headerPopup" id="headerVideoLink" target="_blank" class="alltext">See Why Solodev WXP</a>
+                                                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div>
                                             <div class="col-sm fw-light">
                                                 |
                                             </div>
                                             <div class="col-sm fw-light tabhover">
-                                                Slowbeer på 90'eren Munchies, 2019 4min
+                                                <a href="#headerPopup" id="headerVideoLink" target="_blank" class="alltext">See Why Solodev WXP</a>
+                                                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div> 
                                     </div>
                                 </div>
@@ -65,13 +78,19 @@
                                     <h3 class="col fw-light tabhover" onclick="clickSubjectUnderWork('shrink' , 'underPhotos')">Photos</h3>
                                     <div id="underPhotos" class="underRubrik">
                                             <div class="col-sm fw-light tabhover">
-                                                Vandfasten VICE, 2018 2min
+                                                <a href="#headerPopup" id="headerVideoLink" target="_blank" class="alltext">See Why Solodev WXP</a>
+                                                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div>
                                             <div class="col-sm fw-light">
                                                 |
                                             </div>
                                             <div class="col-sm fw-light tabhover">
-                                                Slowbeer på 90'eren Munchies, 2019 4min
+                                                <a href="#headerPopup" id="headerVideoLink" target="_blank" class="alltext">See Why Solodev WXP</a> 
+                                                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://player.vimeo.com/video/474031715" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
                                             </div> 
                                     </div>
                                 </div>
@@ -86,23 +105,21 @@
                             Contact
                         </div>
                         <div class="underRubrik text-center" id="kontakt-underRubrik">
-                            
                                 <div class="col-sm fw-light">
-                                    tlf. 31829321
+                                    tlf. +45 60304478
                                 </div>
                                 <div class="col-sm fw-light">
                                     <a href = "mailto:taleb@fartous?subject=freelance job&amp;body=Hej Taleb Fartous, ">
-                                        Send email
-                                        </a>
+                                        taleb.fartous@hotmail.com
+                                    </a>
                                 </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        <script src="jquery.magnific-popup.min.js"></script>
     </body>
 </html>

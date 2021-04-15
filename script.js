@@ -1,4 +1,18 @@
 
+
+$( document ).ready(function() {
+    $('#headerVideoLink1').magnificPopup({
+        type:'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    $('#headerVideoLink2').magnificPopup({
+        type:'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    
+});
+
+
 //med class definatioenen "tabhover", gør at tabs skifter farve, så man har en ide om at de er "clickable"
 $(function() {
     $('.tabhover').hover(function(){
