@@ -3,8 +3,19 @@
 $( document ).ready(function() {
     $('#headerVideoLink1').magnificPopup({
         type:'inline',
-        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+       
+          
+           
+
     });
+
+    $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+  
+      });
+
     $('#headerVideoLink2').magnificPopup({
         type:'inline',
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.

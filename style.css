@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
-    color:rgb(102, 99, 67);
+.bodyColor {
+    background-color: rgb(226, 212, 148);
 }
+
+.white-popup {
+    width: 50%; /*or whatever % you prefer*/
+    margin: 0 auto;
+    display: block;
+  }
+
 
 html, body {
     height: 100%;
-    background-color: rgb(226, 212, 148);
+   
 }
 
 div {
