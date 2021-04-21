@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
+    $('.popup-video').magnificPopup({
+        // disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
@@ -88,7 +88,7 @@ var flagUnderrubrikWorkPressed = false;
 function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
 
     if(directionOfGrowth === "shrink") {
-        $("#produktioner").css("font-size","120%")
+        $("#produktioner").css("font-size","2vmin")
 
 
         if(getComputedStyle(document.querySelector('#'+expandSubject)).display === 'block'){
@@ -101,9 +101,9 @@ function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
             if(getComputedStyle(document.querySelector('#underArtical')).display === 'block'){
                 $('#underArtical').slideToggle(500)
             }
-            if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
-                $('#underPhotos').slideToggle(500)
-            }
+            // if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
+            //     $('#underPhotos').slideToggle(500)
+            // }
         
         $('#'+expandSubject).slideToggle(500)
 
@@ -123,11 +123,11 @@ function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
         if(getComputedStyle(document.querySelector('#underArtical')).display === 'block'){
             $('#underArtical').slideToggle(500)
         }
-        if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
-            $('#underPhotos').slideToggle(500)
-        }
+        // if(getComputedStyle(document.querySelector('#underPhotos')).display === 'block'){
+        //     $('#underPhotos').slideToggle(500)
+        // }
 
-        $("#produktioner").css("font-size","2em ")
+        $("#produktioner").css("font-size","3vmin")
         $("#produktioner").css("font-weight", "bolder")
         if(getComputedStyle(document.querySelector('#produktioner-underRubrik')).display === 'block' && getComputedStyle(document.querySelector('#kontakt-underRubrik')).display === 'block') {
             $('#overskrift-navn').slideToggle(500)

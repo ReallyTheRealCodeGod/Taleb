@@ -4,6 +4,43 @@
     box-sizing: border-box;
 }
 
+p {
+ font-size: 2vmin;
+}
+
+a {
+    font-size: 2vmin;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: #265301;
+  }
+  
+  a:visited {
+    color: #437A16;
+  }
+  
+  a:focus {
+    border-bottom: 1px solid;
+    text-decoration: line-through;
+ 
+    
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    
+
+  }
+  
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+  }
+
 .bodyColor {
     background-color: rgb(226, 212, 148);
 }
@@ -19,14 +56,22 @@ div {
     background-color:rgb(226, 212, 148);
 }
 
+
+
 .allText {
-    font-size: 2em;
+    font-size: 3vmin;
     opacity: 70%;
     -webkit-transition: font-size 1s;
     -moz-transition: font-size 1s;
-      -o-transition: font-size 1s;
-         transition: font-size 1s;
+        -o-transition: font-size 1s;
+            transition: font-size 1s;
 }
+
+
+
+  
+
+
 
 .underRubrik {
     display: none; 
