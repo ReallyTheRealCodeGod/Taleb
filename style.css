@@ -21,12 +21,14 @@ a:link {
 
 a:visited {
   color: #437a16;
-}
-
-a:focus {
   border-bottom: 1px solid;
   text-decoration: line-through;
-}
+} 
+
+ a:focus {
+  border-bottom: 1px solid;
+  text-decoration: line-through;
+} 
 
 a:hover {
   border-bottom: 1px solid;

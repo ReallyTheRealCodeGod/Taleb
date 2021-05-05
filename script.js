@@ -5,10 +5,21 @@ $(document).ready(function() {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
-        fixedContentPos: false
+        fixedContentPos: false,
+        
+        
     });
 });
+
+
+//changes css of specific a element, when it is clicked
+jQuery(document).ready(function($) {
+$( ".popup-video" ).on( "click", function() {
+    $( this ).css("text-decoration", "line-through"
+        );
+  });
+});
+
 
 
 //med class definatioenen "tabhover", gør at tabs skifter farve, så man har en ide om at de er "clickable"
@@ -144,3 +155,4 @@ function clickSubjectUnderWork(directionOfGrowth, expandSubject) {
         flagAlreadyShrunk = false;
     }
 }
+
