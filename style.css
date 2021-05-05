@@ -41,10 +41,13 @@ a:active {
   background-color: rgb(228, 196, 56);
 }
 
+html {
+  overflow: hidden;
+}
+
 html,
 body {
   height: 100%;
-  overflow: hidden;
 }
 
 div {
