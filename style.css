@@ -43,6 +43,7 @@ a:active {
 
 html {
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 html,
